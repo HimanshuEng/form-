@@ -13,7 +13,7 @@
 </head>
 
 <body>
- <!-- HERO -->
+<!-- HERO -->
 
   <section class="hero">
 
@@ -396,6 +396,244 @@
           <input
             class="form-check-input"
             type="checkbox"
+            id="termsCheck"
+          >
+
+          <label class="form-check-label" for="termsCheck">
+
+            I agree to the Terms & Conditions and Privacy Policy *
+
+          </label>
+
+        </div>
+
+        <div class="error-text" id="termsError">
+          Please accept Terms & Conditions and Privacy Policy.
+        </div>
+
+        <!-- MARKETING -->
+
+        <div class="form-check mt-4">
+
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="marketingCheck"
+          >
+
+          <label class="form-check-label" for="marketingCheck">
+
+            I agree to receive updates and marketing communication
+            from Global Trade Alliance *
+
+          </label>
+
+        </div>
+
+        <div class="error-text" id="marketingError">
+          Please accept marketing communication agreement.
+        </div>
+
+        <!-- BUTTON -->
+
+        <div class="text-center mt-5">
+
+          <button
+            type="submit"
+            class="btn btn-primary px-5 py-3"
+          >
+            Submit Registration
+          </button>
+
+        </div>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    © 2025 Global Trade India Expo. All Rights Reserved.
+
+  </footer>
+
+  <!-- JS -->
+
+  <script>
+
+    const form = document.getElementById("expoForm");
+
+    form.addEventListener("submit", function(e){
+
+      e.preventDefault();
+
+      let isValid = true;
+
+      const fields = [
+
+        {
+          id:"companyName",
+          validate:value => value.trim() !== ""
+        },
+
+        {
+          id:"website",
+          validate:value => /^https?:\/\/.+\..+/.test(value)
+        },
+
+        {
+          id:"email",
+          validate:value => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
+        },
+
+        {
+          id:"phone",
+          validate:value => /^[0-9]{10}$/.test(value)
+        },
+
+        {
+          id:"country",
+          validate:value => value.trim() !== ""
+        },
+
+        {
+          id:"stateCity",
+          validate:value => value.trim() !== ""
+        },
+
+        {
+          id:"address",
+          validate:value => value.trim() !== ""
+        },
+
+        {
+          id:"turnover",
+          validate:value => value.trim() !== ""
+        },
+
+        {
+          id:"importValue",
+          validate:value => value.trim() !== ""
+        },
+
+        {
+          id:"importsIndia",
+          validate:value => value.trim() !== ""
+        },
+
+        {
+          id:"requirements",
+          validate:value => value.trim() !== ""
+        }
+
+      ];
+
+      fields.forEach(field => {
+
+        const input = document.getElementById(field.id);
+
+        const error = input.nextElementSibling;
+
+        if(!field.validate(input.value)){
+
+          input.classList.add("is-invalid");
+
+          input.classList.remove("is-valid");
+
+          error.style.display = "block";
+
+          isValid = false;
+
+        }
+        else{
+
+          input.classList.remove("is-invalid");
+
+          input.classList.add("is-valid");
+
+          error.style.display = "none";
+
+        }
+
+      });
+
+      // CATEGORY VALIDATION
+
+      const sectors = document.querySelectorAll(".sector-check");
+
+      const sectorError = document.getElementById("sectorError");
+
+      const checked = Array.from(sectors).some(item => item.checked);
+
+      if(!checked){
+
+        sectorError.style.display = "block";
+
+        isValid = false;
+
+      }
+      else{
+
+        sectorError.style.display = "none";
+
+      }
+
+      // TERMS VALIDATION
+
+      const termsCheck = document.getElementById("termsCheck");
+      const termsError = document.getElementById("termsError");
+
+      if(!termsCheck.checked){
+
+        termsError.style.display = "block";
+        isValid = false;
+
+      }else{
+
+        termsError.style.display = "none";
+
+      }
+
+      // MARKETING VALIDATION
+
+      const marketingCheck = document.getElementById("marketingCheck");
+      const marketingError = document.getElementById("marketingError");
+
+      if(!marketingCheck.checked){
+
+        marketingError.style.display = "block";
+        isValid = false;
+
+      }else{
+
+        marketingError.style.display = "none";
+
+      }
+
+      // SUCCESS
+
+      if(isValid){
+
+        alert("Registration Submitted Successfully!");
+
+        form.reset();
+
+        document.querySelectorAll(".is-valid").forEach(input => {
+
+          input.classList.remove("is-valid");
+
+        });
+
+      }
+
+    });
+
+  </script>
+
             id="termsCheck"
           >
 
