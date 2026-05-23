@@ -1,4 +1,4 @@
-body{
+  body{
       background:#f4f7fb;
       font-family: Arial, sans-serif;
     }
@@ -86,6 +86,10 @@ body{
       font-size:14px;
       margin-top:5px;
       display:none;
+    }
+
+    .form-check{
+      margin-top:20px;
     }
 
     footer{
