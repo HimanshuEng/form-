@@ -14,8 +14,6 @@
 
 <body>
 
-  <!-- HERO -->
-
   <section class="hero">
 
     <div class="container">
@@ -207,197 +205,214 @@
 
           <!-- TURNOVER -->
 
-          <div class="col-md-6 mb-4">
+          <!-- CHECKBOX SECTION FIRST -->
 
-            <label class="form-label">
-              Company Turnover in USD *
-            </label>
+<h4 class="mb-4">
+  Select Products / Business Interests *
+</h4>
 
-            <input
-              type="text"
-              class="form-control"
-              id="turnover"
-              placeholder="Example: 50K USD, 1 Million USD"
-            >
+<div id="sectorGroup">
 
-            <div class="error-text">
-              Company turnover is required.
-            </div>
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Traditional Handicrafts & Artisan Products
+  </div>
 
-          </div>
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Premium Carpets & Floor Coverings
+  </div>
 
-          <!-- IMPORT VALUE -->
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Handloom & Textile Products
+  </div>
 
-          <div class="col-md-6 mb-4">
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Wool & Pashmina Products
+  </div>
 
-            <label class="form-label">
-              Import Value Last Year in USD *
-            </label>
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Agriculture & Horticulture Produce
+  </div>
 
-            <input
-              type="text"
-              class="form-control"
-              id="importValue"
-              placeholder="Example: 20K USD, Approx 1 Million"
-            >
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Processed & Packaged Food Products
+  </div>
 
-            <div class="error-text">
-              Import value is required.
-            </div>
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Organic & Fresh Vegetables
+  </div>
 
-          </div>
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Herbal Cosmetics & Wellness Products
+  </div>
 
-          <!-- IMPORTS FROM INDIA -->
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Aromatic, Herbal & Medicinal Products
+  </div>
 
-          <div class="col-md-12 mb-4">
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Essential Oils & Floriculture Products
+  </div>
 
-            <label class="form-label">
-              Imports from India (if any) *
-            </label>
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Textiles & Apparel
+  </div>
 
-            <textarea
-              class="form-control"
-              id="importsIndia"
-              rows="3"
-              placeholder="Write imported products or services from India"
-            ></textarea>
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Fashion Jewellery & Accessories
+  </div>
 
-            <div class="error-text">
-              This field is required.
-            </div>
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Furniture & Interiors
+  </div>
 
-          </div>
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Handicrafts & Lifestyle
+  </div>
 
-        </div>
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Leather Goods
+  </div>
 
-        <!-- CHECKBOX SECTION -->
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Packaging Solutions
+  </div>
 
-        <h4 class="mb-4">
-          Select Products / Business Interests *
-        </h4>
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Houseware & Kitchenware
+  </div>
 
-        <div id="sectorGroup">
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Toys & Children's Products
+  </div>
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Traditional Handicrafts & Artisan Products
-          </div>
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Home Decor & Furnishings
+  </div>
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Premium Carpets & Floor Coverings
-          </div>
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Footwear
+  </div>
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Handloom & Textile Products
-          </div>
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Gifts & Premium Products
+  </div>
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Wool & Pashmina Products
-          </div>
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Wellness & Personal Care
+  </div>
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Agriculture & Horticulture Produce
-          </div>
+  <div class="sector-box">
+    <input type="checkbox" class="sector-check">
+    Services
+  </div>
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Processed & Packaged Food Products
-          </div>
+</div>
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Organic & Fresh Vegetables
-          </div>
+<div class="error-text" id="sectorError">
+  Please select at least one option.
+</div>
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Herbal Cosmetics & Wellness Products
-          </div>
+<!-- OTHER CATEGORY -->
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Aromatic, Herbal & Medicinal Products
-          </div>
+<div class="mt-4 mb-5">
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Essential Oils & Floriculture Products
-          </div>
+  <label class="form-label">
+    If Category Not Listed, Please Specify
+  </label>
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Textiles & Apparel
-          </div>
+  <input
+    type="text"
+    class="form-control"
+    id="otherCategory"
+    placeholder="Write your product or business category"
+  >
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Fashion Jewellery & Accessories
-          </div>
+</div>
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Furniture & Interiors
-          </div>
+<!-- TURNOVER QUESTIONS AFTER PRODUCTS -->
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Handicrafts & Lifestyle
-          </div>
+<div class="row">
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Leather Goods
-          </div>
+  <div class="col-md-6 mb-4">
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Packaging Solutions
-          </div>
+    <label class="form-label">
+      Company Turnover in USD *
+    </label>
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Houseware & Kitchenware
-          </div>
+    <input
+      type="text"
+      class="form-control"
+      id="turnover"
+      placeholder="Example: 50K USD, 1 Million USD"
+    >
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Toys & Children's Products
-          </div>
+    <div class="error-text">
+      Company turnover is required.
+    </div>
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Home Decor & Furnishings
-          </div>
+  </div>
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Footwear
-          </div>
+  <div class="col-md-6 mb-4">
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Gifts & Premium Products
-          </div>
+    <label class="form-label">
+      Import Value Last Year in USD *
+    </label>
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Wellness & Personal Care
-          </div>
+    <input
+      type="text"
+      class="form-control"
+      id="importValue"
+      placeholder="Example: 20K USD, Approx 1 Million"
+    >
 
-          <div class="sector-box">
-            <input type="checkbox" class="sector-check">
-            Services
-          </div>
+    <div class="error-text">
+      Import value is required.
+    </div>
 
-        </div>
+  </div>
 
-        <div class="error-text" id="sectorError">
-          Please select at least one option.
-        </div>
+  <div class="col-md-12 mb-4">
+
+    <label class="form-label">
+      Imports from India (if any) *
+    </label>
+
+    <textarea
+      class="form-control"
+      id="importsIndia"
+      rows="3"
+      placeholder="Write imported products or services from India"
+    ></textarea>
+
+    <div class="error-text">
+      This field is required.
+    </div>
+
+  </div>
+
+</div>
 
         <!-- OTHER CATEGORY -->
 
@@ -676,6 +691,7 @@
     });
 
   </script>
+
 
 </body>
 </html>
