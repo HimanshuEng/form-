@@ -1,0 +1,109 @@
+body{
+      background:#f4f7fb;
+      font-family: Arial, sans-serif;
+    }
+
+    /* HERO */
+
+    .hero{
+      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+      url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1400&auto=format&fit=crop');
+
+      background-size: cover;
+      background-position: center;
+
+      color:white;
+      text-align:center;
+      padding:80px 20px;
+    }
+
+    .hero h1{
+      font-size:48px;
+      font-weight:700;
+      text-transform:uppercase;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      font-size:18px;
+      margin-bottom:10px;
+    }
+
+    .support{
+      background:rgba(255,255,255,0.12);
+      display:inline-block;
+      padding:20px;
+      border-radius:10px;
+      margin-top:20px;
+    }
+
+    /* FORM */
+
+    .form-container{
+      max-width:1100px;
+      margin:50px auto;
+      background:white;
+      padding:40px;
+      border-radius:15px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .form-title{
+      color:#0d6efd;
+      font-weight:700;
+      margin-bottom:30px;
+    }
+
+    .form-label{
+      font-weight:600;
+    }
+
+    .form-control{
+      height:50px;
+      border-radius:8px;
+    }
+
+    textarea.form-control{
+      height:auto;
+    }
+
+    .sector-box{
+      border:1px solid #ddd;
+      border-radius:10px;
+      padding:15px;
+      margin-bottom:14px;
+      background:#fafafa;
+      transition:0.3s;
+    }
+
+    .sector-box:hover{
+      border-color:#0d6efd;
+      background:#eef5ff;
+    }
+
+    .error-text{
+      color:#dc3545;
+      font-size:14px;
+      margin-top:5px;
+      display:none;
+    }
+
+    footer{
+      background:#111827;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:32px;
+      }
+
+      .form-container{
+        padding:25px;
+      }
+
+    }

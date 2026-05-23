@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Global Trade India Expo 2025</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+
+    body{
+      background:#f4f7fb;
+      font-family: Arial, sans-serif;
+    }
+
+    /* HERO */
+
+    .hero{
+      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+      url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1400&auto=format&fit=crop');
+
+      background-size: cover;
+      background-position: center;
+
+      color:white;
+      text-align:center;
+      padding:80px 20px;
+    }
+
+    .hero h1{
+      font-size:48px;
+      font-weight:700;
+      text-transform:uppercase;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      font-size:18px;
+      margin-bottom:10px;
+    }
+
+    .support{
+      background:rgba(255,255,255,0.12);
+      display:inline-block;
+      padding:20px;
+      border-radius:10px;
+      margin-top:20px;
+    }
+
+    /* FORM */
+
+    .form-container{
+      max-width:1100px;
+      margin:50px auto;
+      background:white;
+      padding:40px;
+      border-radius:15px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .form-title{
+      color:#0d6efd;
+      font-weight:700;
+      margin-bottom:30px;
+    }
+
+    .form-label{
+      font-weight:600;
+    }
+
+    .form-control{
+      height:50px;
+      border-radius:8px;
+    }
+
+    textarea.form-control{
+      height:auto;
+    }
+
+    .sector-box{
+      border:1px solid #ddd;
+      border-radius:10px;
+      padding:15px;
+      margin-bottom:14px;
+      background:#fafafa;
+      transition:0.3s;
+    }
+
+    .sector-box:hover{
+      border-color:#0d6efd;
+      background:#eef5ff;
+    }
+
+    .error-text{
+      color:#dc3545;
+      font-size:14px;
+      margin-top:5px;
+      display:none;
+    }
+
+    footer{
+      background:#111827;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:32px;
+      }
+
+      .form-container{
+        padding:25px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <h1>Global Trade India Expo 2025</h1>
+
+      <p><strong>International Buyer Seller Meet & Expo</strong></p>
+
+      <p>📅 Event Date: Aug 5 - 8, 2026</p>
+
+      <p>📍 India Expo Centre & Mart, Greater Noida, India</p>
+
+      <div class="support">
+
+        <h5>Support & Contact</h5>
+
+        <p>📧 connect@gtaindia.org</p>
+
+        <p>📧 connect@globaltradeindiaexpo.com</p>
+
+        <p>📧 support@globaltradeindiaexpo.com</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FORM -->
+
+  <section class="container">
+
+    <div class="form-container">
+
+      <h2 class="form-title">
+        Buyer Registration Form
+      </h2>
+
+      <form id="expoForm" novalidate>
+
+        <div class="row">
+
+          <!-- COMPANY NAME -->
+
+          <div class="col-md-6 mb-4">
+
+            <label class="form-label">
+              Company Name *
+            </label>
+
+            <input
+              type="text"
+              class="form-control"
+              id="companyName"
+              placeholder="Enter company name"
+            >
+
+            <div class="error-text">
+              Company name is required.
+            </div>
+
+          </div>
+
+          <!-- WEBSITE -->
+
+          <div class="col-md-6 mb-4">
+
+            <label class="form-label">
+              Company Website *
+            </label>
+
+            <input
+              type="url"
+              class="form-control"
+              id="website"
+              placeholder="https://example.com"
+            >
+
+            <div class="error-text">
+              Enter valid website URL.
+            </div>
+
+          </div>
+
+          <!-- EMAIL -->
+
+          <div class="col-md-6 mb-4">
+
+            <label class="form-label">
+              Email Address *
+            </label>
+
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter email address"
+            >
+
+            <div class="error-text">
+              Enter valid email address.
+            </div>
+
+          </div>
+
+          <!-- PHONE -->
+
+          <div class="col-md-6 mb-4">
+
+            <label class="form-label">
+              Phone Number *
+            </label>
+
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              placeholder="Enter 10 digit phone number"
+            >
+
+            <div class="error-text">
+              Enter valid 10 digit phone number.
+            </div>
+
+          </div>
+
+          <!-- COUNTRY -->
+
+          <div class="col-md-6 mb-4">
+
+            <label class="form-label">
+              Country *
+            </label>
+
+            <input
+              type="text"
+              class="form-control"
+              id="country"
+              placeholder="Enter country"
+            >
+
+            <div class="error-text">
+              Country is required.
+            </div>
+
+          </div>
+
+          <!-- STATE -->
+
+          <div class="col-md-6 mb-4">
+
+            <label class="form-label">
+              State / City *
+            </label>
+
+            <input
+              type="text"
+              class="form-control"
+              id="stateCity"
+              placeholder="Enter state or city"
+            >
+
+            <div class="error-text">
+              State or city is required.
+            </div>
+
+          </div>
+
+          <!-- ADDRESS -->
+
+          <div class="col-md-12 mb-4">
+
+            <label class="form-label">
+              Company Address *
+            </label>
+
+            <textarea
+              class="form-control"
+              id="address"
+              rows="3"
+              placeholder="Enter full company address"
+            ></textarea>
+
+            <div class="error-text">
+              Company address is required.
+            </div>
+
+          </div>
+
+          <!-- TURNOVER -->
+
+          <div class="col-md-6 mb-4">
+
+            <label class="form-label">
+              Company Turnover in USD *
+            </label>
+
+            <input
+              type="text"
+              class="form-control"
+              id="turnover"
+              placeholder="Enter company turnover in USD"
+            >
+
+            <div class="error-text">
+              Company turnover is required.
+            </div>
+
+          </div>
+
+          <!-- IMPORT VALUE -->
+
+          <div class="col-md-6 mb-4">
+
+            <label class="form-label">
+              Import Value Last Year in USD *
+            </label>
+
+            <input
+              type="text"
+              class="form-control"
+              id="importValue"
+              placeholder="Enter import value last year in USD"
+            >
+
+            <div class="error-text">
+              Import value is required.
+            </div>
+
+          </div>
+
+          <!-- IMPORTS FROM INDIA -->
+
+          <div class="col-md-12 mb-4">
+
+            <label class="form-label">
+              Imports from India (if any) *
+            </label>
+
+            <textarea
+              class="form-control"
+              id="importsIndia"
+              rows="3"
+              placeholder="Write imported products or services from India"
+            ></textarea>
+
+            <div class="error-text">
+              This field is required.
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- CHECKBOX SECTION -->
+
+        <h4 class="mb-4">
+          Select Products / Business Interests *
+        </h4>
+
+        <div id="sectorGroup">
+
+          <div class="sector-box">
+            <input type="checkbox" class="sector-check">
+            Traditional Handicrafts & Artisan Products
+            (Paper Mache, Sozni Embroidery, Basohli Art, Kashmir Willow Cricket Bats etc.)
+          </div>
+
+          <div class="sector-box">
+            <input type="checkbox" class="sector-check">
+            Premium Carpets & Floor Coverings
+            (Kashmiri Carpets, Namda and handmade rugs)
+          </div>
+
+          <div class="sector-box">
+            <input type="checkbox" class="sector-check">
+            Handloom & Textile Products
+            (Silk fabrics, traditional woven textiles and ethnic materials)
+          </div>
+
+          <div class="sector-box">
+            <input type="checkbox" class="sector-check">
+            Wool & Pashmina Products
+            (Pashmina Shawls, Kani Shawls, tweed fabrics and woollen wear)
+          </div>
+
+          <div class="sector-box">
+            <input type="checkbox" class="sector-check">
+            Agriculture & Horticulture Produce
+            (Apple, Walnut, Almonds, Saffron, Pear, Cherry etc.)
+          </div>
+
+          <div class="sector-box">
+            <input type="checkbox" class="sector-check">
+            Processed & Packaged Food Products
+            (Dry Fruits, Rajma, Honey, Basmati Rice and related products)
+          </div>
+
+          <div class="sector-box">
+            <input type="checkbox" class="sector-check">
+            Organic & Fresh Vegetables
+          </div>
+
+          <div class="sector-box">
+            <input type="checkbox" class="sector-check">
+            Herbal Cosmetics & Wellness Products
+            (Lavender items, handmade soaps and natural skincare products)
+          </div>
+
+          <div class="sector-box">
+            <input type="checkbox" class="sector-check">
+            Aromatic, Herbal & Medicinal Products
+            (Traditional spices, herbal extracts and wellness ingredients)
+          </div>
+
+          <div class="sector-box">
+            <input type="checkbox" class="sector-check">
+            Essential Oils & Floriculture Products
+          </div>
+
+        </div>
+
+        <div class="error-text" id="sectorError">
+          Please select at least one option.
+        </div>
+
+        <!-- REQUIREMENTS -->
+
+        <div class="mt-5">
+
+          <label class="form-label">
+            Product / Service Requirements *
+          </label>
+
+          <textarea
+            class="form-control"
+            id="requirements"
+            rows="5"
+            placeholder="Write products or services you are interested in sourcing from India"
+          ></textarea>
+
+          <div class="error-text">
+            Product requirement is required.
+          </div>
+
+        </div>
+
+        <!-- BUTTON -->
+
+        <div class="text-center mt-5">
+
+          <button
+            type="submit"
+            class="btn btn-primary px-5 py-3"
+          >
+            Submit Registration
+          </button>
+
+        </div>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    © 2025 Global Trade India Expo. All Rights Reserved.
+
+  </footer>
+
+  <!-- JS -->
+
+  <script>
+
+    const form = document.getElementById("expoForm");
+
+    form.addEventListener("submit", function(e){
+
+      e.preventDefault();
+
+      let isValid = true;
+
+      const fields = [
+
+        {
+          id:"companyName",
+          validate:value => value.trim() !== ""
+        },
+
+        {
+          id:"website",
+          validate:value => /^https?:\/\/.+\..+/.test(value)
+        },
+
+        {
+          id:"email",
+          validate:value => /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(value)
+        },
+
+        {
+          id:"phone",
+          validate:value => /^[0-9]{10}$/.test(value)
+        },
+
+        {
+          id:"country",
+          validate:value => value.trim() !== ""
+        },
+
+        {
+          id:"stateCity",
+          validate:value => value.trim() !== ""
+        },
+
+        {
+          id:"address",
+          validate:value => value.trim() !== ""
+        },
+
+        {
+          id:"turnover",
+          validate:value => value.trim() !== ""
+        },
+
+        {
+          id:"importValue",
+          validate:value => value.trim() !== ""
+        },
+
+        {
+          id:"importsIndia",
+          validate:value => value.trim() !== ""
+        },
+
+        {
+          id:"requirements",
+          validate:value => value.trim() !== ""
+        }
+
+      ];
+
+      fields.forEach(field => {
+
+        const input = document.getElementById(field.id);
+
+        const error = input.nextElementSibling;
+
+        if(!field.validate(input.value)){
+
+          input.classList.add("is-invalid");
+
+          input.classList.remove("is-valid");
+
+          error.style.display = "block";
+
+          isValid = false;
+
+        }
+        else{
+
+          input.classList.remove("is-invalid");
+
+          input.classList.add("is-valid");
+
+          error.style.display = "none";
+
+        }
+
+      });
+
+      // CHECKBOX VALIDATION
+
+      const sectors = document.querySelectorAll(".sector-check");
+
+      const sectorError = document.getElementById("sectorError");
+
+      const checked = Array.from(sectors).some(item => item.checked);
+
+      if(!checked){
+
+        sectorError.style.display = "block";
+
+        isValid = false;
+
+      }
+      else{
+
+        sectorError.style.display = "none";
+
+      }
+
+      // SUCCESS
+
+      if(isValid){
+
+        alert("Registration Submitted Successfully!");
+
+        form.reset();
+
+        document.querySelectorAll(".is-valid").forEach(input => {
+
+          input.classList.remove("is-valid");
+
+        });
+
+      }
+
+    });
+
+  </script>
+
+</body>
+</html>
